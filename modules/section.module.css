@@ -1,0 +1,7 @@
+.section {
+  background-size: cover;
+}
+
+.sectionH1Bg {
+  background: url('/herobg.svg') no-repeat top center fixed;
+}
