@@ -4,20 +4,20 @@ import Container from '@/components/Container';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Developers | CoinBank',
-    description: 'Building crypto-currency platform for everyone.'
+    title: 'About | CoinBank',
+    description: 'The next-generation crypto-wallet & trading platform.'
 }
 
-const Developer = () => {
+const About = () => {
     return (
         <>
             <Section bgClass='' classname="min-h-screen">
                 <Container>
-                    <div className='text-gray-900 text-lg'>Developers Page</div>
+                    <div className='text-gray-900 text-lg'>About Page</div>
                 </Container>
             </Section>
         </>
     )
 }
 
-export default Developer;
+export default About;
