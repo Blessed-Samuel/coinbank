@@ -1,8 +1,9 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { MdArrowOutward, MdArrowDropDown } from 'react-icons/md'
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';;
+import Image from 'next/image';
+import { MdArrowDropDown } from 'react-icons/md';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,7 +29,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Brand Logo */}
-            <Link href="/" className="flex items-center text-sm">
+            <Link href="/" className="flex items-center text-sm" onClick={closeMenu}>
               <Image src="/coinBankLogo.svg" alt="Logo" width={40} height={40} className='w-auto h-auto mr-2' />
               CoinBank
             </Link>
@@ -185,7 +186,7 @@ const Navbar = () => {
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
 
 export default Navbar;
