@@ -18,12 +18,12 @@ const Button: React.FC<ButtonProps> = ({
     noBackground = false
 }) => {
     // Define base styles and variant-based styles
-    const baseStyle = `px-4 py-2 rounded font-semibold transition-all duration focus:outline-none`;
+    const baseStyle = `px-4 py-2 rounded font-normal transition-all duration focus:outline-none`;
 
     // Styles with and without background
     const variantStyles = noBackground
         ? {
-            primary: 'text-black',
+            primary: 'text-blue',
             secondary: 'text-gray-800 hover:text-gray-600',
             danger: 'text-red-500 hover:text-red-600',
         }
