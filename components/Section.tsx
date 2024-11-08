@@ -18,7 +18,7 @@ const Section: React.FC<SectionProps> = ({
         <section
             id={id}
             className={`${styles.section} ${bgClass &&
-                styles[bgClass]} w-full ${classname && classname}`}
+                styles[bgClass]} w-full px-2 ${classname && classname}`}
         >
             {children}
         </section>

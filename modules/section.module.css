@@ -3,5 +3,5 @@
 }
 
 .sectionH1Bg {
-  background: url('/herobg.svg') no-repeat top center fixed;
+  background: url('../public/herobg.svg') no-repeat top center;
 }

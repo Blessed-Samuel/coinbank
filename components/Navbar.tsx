@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';;
+import Link from 'next/link';
 import Image from 'next/image';
 import { MdArrowDropDown } from 'react-icons/md';
 import Button from '@/components/Button';
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Brand Logo */}
-            <Link href="/" className="flex items-center text-xl font-semibold" onClick={closeMenu}>
+            <Link href="/" className="flex items-center text-xl font-semibold transition-all duration-300 hover:" onClick={closeMenu}>
               <Image src="/coinBankLogo.svg" alt="Logo" width={40} height={40} className='w-auto h-auto mr-2' />
               CoinBank
             </Link>
@@ -99,11 +99,11 @@ const Navbar = () => {
             {/* Sign In & Get Started Button (Only visible on larger screens) */}
             <div className="hidden md:flex space-x-4">
               <Link href="/signin">
-                <Button onClick={closeMenu} noBackground className={`font-normal border rounded-lg text-xs py-[14px] px-[20px] text-black`} >Sign In</Button>
+                <Button onClick={closeMenu} noBackground className={`font-normal border rounded-lg text-xs py-[14px] px-[20px] text-black hover:bg-gray-100`} >Sign In</Button>
               </Link>
 
               <Link href="/getstarted">
-                <Button onClick={closeMenu} noBackground className={`font-normal  border rounded-lg text-xs py-[14px] px-[20px] bg-none text-[#5235E8]`} >Get Started</Button>
+                <Button onClick={closeMenu} noBackground className={`font-normal  border rounded-lg text-xs py-[14px] px-[20px] bg-none text-[#5235E8] hover:bg-gray-100`} >Get Started</Button>
               </Link>
             </div>
 
@@ -183,7 +183,7 @@ const Navbar = () => {
             <div>
               <Link href="/signin">
                 <Button
-                  className='bg-blue-500 mt-4 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
+                  className='bg-blue-500 py-4 mt-4 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
                 >
                   Sign In
                 </Button>
@@ -191,7 +191,7 @@ const Navbar = () => {
 
               <Link href="/getstarted">
                 <Button
-                  className='bg-blue-500 mt-2 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
+                  className='bg-blue-500 py-4 mt-2 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
                 >
                   Get Started
                 </Button>

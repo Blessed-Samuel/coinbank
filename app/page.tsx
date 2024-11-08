@@ -2,6 +2,7 @@
 import { Metadata } from 'next';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
+import Hero from '@/components/Hero';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://coinbank.com'),
@@ -35,9 +36,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Section bgClass='' classname="min-h-screen">
+      <Section bgClass='sectionH1Bg' classname="min-h-screen">
         <Container>
-          <div className='text-gray-900 text-lg'>Home Page</div>
+          <Hero
+            head='Sign in to your secure wallet!'
+            title='The next-gen crypto wallet & trading platform'
+            body='All of your cryptocurrency in one place — from Bitcoin and Ethereum to Litecoin and Ripple.'
+            heroImg='/heroimg.svg'
+          />
         </Container>
       </Section>
     </>
