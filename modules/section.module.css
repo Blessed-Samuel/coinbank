@@ -9,3 +9,7 @@
 .sectionH2Bg {
   background: url('../public/hero2bg.svg') no-repeat top center;
 }
+
+.sectionH3Bg {
+  background: url('../public/hero3bg.svg') no-repeat top center;
+}
