@@ -5,3 +5,7 @@
 .sectionH1Bg {
   background: url('../public/herobg.svg') no-repeat top center;
 }
+
+.sectionH2Bg {
+  background: url('../public/hero2bg.svg') no-repeat top center;
+}

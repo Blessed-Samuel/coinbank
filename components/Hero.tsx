@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import InputField from "@/components/Input";
 
 interface HeroProps {
-    head: string;
-    title?: string;
-    body?: string;
-    heroImg?: string;
+    head: string
+    title?: string
+    body?: string
+    heroImg?: string
 }
 
 const Hero: React.FC<HeroProps> = ({ head, title, body, heroImg }) => {
@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ head, title, body, heroImg }) => {
                 <div className="flex flex-col item-center space-y-12">
                     <div className="space-y-6 md:text-left text-center">
                         <h6 className="text-mainColorPrimary tracking-widest font-light">{head}</h6>
-                        <h1 className="text-mainColorSecondary text-4xl md:text-5xl leading-[120%] font-bold">{title}</h1>
+                        <h1 className={`text-mainColorSecondary text-4xl md:text-5xl font-bold`} style={{ lineHeight: '125%' }}>{title}</h1>
                         <p className="text-mainColorNeutral font-light">{body}</p>
                     </div>
 

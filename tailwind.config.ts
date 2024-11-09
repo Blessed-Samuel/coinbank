@@ -21,7 +21,18 @@ const config: Config = {
         mainColorSecondary: '#0E0637',
         mainColorPrimary: '#5235E8',
         mainColorNeutral: '#717184',
-      }
+        mainColorGreen: '#DAF727',
+      },
+
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+      },
     },
   },
   plugins: [],

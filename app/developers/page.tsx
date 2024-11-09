@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 import { Metadata } from 'next';
@@ -11,9 +12,15 @@ export const metadata: Metadata = {
 const Developer = () => {
     return (
         <>
-            <Section bgClass='' classname="min-h-screen">
+            <Section bgClass="sectionH2Bg" classname='mt-40 min-h-screen' customStyles='bg-white'>
                 <Container>
-                    <div className='text-gray-900 text-lg'>Developers Page</div>
+                    <div className='flex gap-4 items-center flex-col'>
+                        <h6 className="text-mainColorPrimary font-light">DEVELOPERS</h6>
+                        <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Welcome to Developers Page</h1>
+                        <p className="text-mainColorNeutral font-light text-center">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
+
+                        <Image src="/featuresImg.svg" alt="hero-2-bg" width={100} height={100} className="w-auto h-auto md:mt-36 mt-12" />
+                    </div>
                 </Container>
             </Section>
         </>
