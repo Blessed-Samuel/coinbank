@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 import Hero from '@/components/Hero';
-import SponsorMarquee from "@/components/sponsors";
+import SponsorMarquee from "@/components/Sponsors"
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://coinbank.com'),
@@ -83,21 +83,42 @@ export default function Home() {
               <p className="text-mainColorNeutral font-light">Trusted by these blockchains leading industries </p>
             </div>
 
-            <SponsorMarquee />
+            <div id="marqueeEl">
+              <SponsorMarquee direction="left" />
+              <SponsorMarquee direction="right" />
+            </div>
           </div>
         </Container>
       </Section>
 
       {/* Fourth Section */}
-      <Section bgClass="sectionH2Bg" classname='mt-40 min-h-screen' customStyles='bg-white'>
+      <Section bgClass="sectionH2Bg" classname='mt-40' customStyles='bg-white'>
         <Container>
           <div className='flex gap-4 items-center flex-col'>
             <h6 className="text-mainColorPrimary font-light">FEATURES</h6>
-            <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{lineHeight: '120%'}}>Get a bird’s eye view of your crypto investments</h1>
+            <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Get a bird’s eye view of your crypto investments</h1>
             <p className="text-mainColorNeutral font-light text-center">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
-
-            <Image src="/featuresImg.svg" alt="hero-2-bg" width={100} height={100} className="w-auto h-auto md:mt-36 mt-12"/>
+            <Image src="/featuresImg.svg" alt="featuresImage" width={100} height={100} className="w-auto h-auto md:mt-36 mt-12" />
           </div>
+        </Container>
+      </Section>
+
+      {/* Fifth Section */}
+      <Section bgClass="sectionH3Bg">
+        <Container>
+          <div className='flex pt-24 gap-4 items-center flex-col'>
+            <h6 className="text-mainColorPrimary font-light">FEATURES</h6>
+            <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Many type of Blockchains</h1>
+            <p className="text-mainColorNeutral font-light text-center max-w-2xl">Blockchain technology comes in various forms, each with unique features and uses. From public to private chains.</p>
+            <Image src="/coinImg.svg" alt="coinImage" width={100} height={100} className="w-auto h-auto mt-16 mb-24" />
+          </div>
+        </Container>
+      </Section>
+
+      {/* Sixth Section */}
+      <Section bgClass="" classname="min-h-screen mt-36">
+        <Container>
+          <Image src="/contentImg.svg" alt="contentImage" width={100} height={100} className="w-auto h-auto" />
         </Container>
       </Section>
     </>

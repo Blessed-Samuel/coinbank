@@ -24,14 +24,19 @@ const config: Config = {
         mainColorGreen: '#DAF727',
       },
 
-      keyframes: {
+     keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
+          '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
+        },
+        marqueeReverse: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
         },
       },
       animation: {
-        marquee: 'marquee 25s linear infinite',
+        marquee: 'marquee 30s linear infinite',
+        marqueeReverse: 'marqueeReverse 30s linear infinite',
       },
     },
   },
