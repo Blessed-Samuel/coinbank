@@ -61,7 +61,7 @@ const Navbar = () => {
                       Liquidity
                     </Link>
                     <Link href="/features/margintrading" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
-                      Marging Trading
+                      Margin Trading
                     </Link>
                   </div>
                 )}
