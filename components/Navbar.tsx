@@ -5,6 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MdArrowDropDown } from 'react-icons/md';
 import Button from '@/components/Button';
+import MenuLinks from '@/components/NavMenus';
+import { featuresLinks, companyLinks } from '@/components/MenuLinks';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,7 +32,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex justify-between items-center h-20">
             {/* Brand Logo */}
-            <Link href="/" className="flex items-center text-xl font-semibold transition-all duration-300 hover:" onClick={closeMenu}>
+            <Link href="/" className="flex items-center text-xl font-semibold" onClick={closeMenu}>
               <Image src="/coinBankLogo.svg" alt="Logo" width={40} height={40} className='w-auto h-auto mr-2' />
               CoinBank
             </Link>
@@ -49,16 +51,16 @@ const Navbar = () => {
                 {/* Desktop Navs && Links */}
                 {isDropdownOpen === 'features' && (
                   <div className="absolute bg-white text-black border border-gray-200 mt-2 py-4 w-40 rounded shadow-lg transition-all duration-300">
-                    <Link href="/funding" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/features/funding" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
                       Funding
                     </Link>
-                    <Link href="/staking" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/features/staking" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
                       Staking
                     </Link>
-                    <Link href="/liquidity" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/features/liquidity" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
                       Liquidity
                     </Link>
-                    <Link href="/margintrading" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/features/margintrading" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
                       Marging Trading
                     </Link>
                   </div>
@@ -76,17 +78,17 @@ const Navbar = () => {
                   <MdArrowDropDown className={`transition-transform duration-300 ${isDropdownOpen === 'company' ? 'rotate-180' : ''}`} />
                 </button>
                 {isDropdownOpen === 'company' && (
-                  <div className="absolute bg-white text-black border border-gray-200 mt-2 py-2 w-40 rounded shadow-lg transition-all duration-300">
-                    <Link href="/about" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
+                  <div className="absolute bg-white text-black border border-gray-200 mt-2 py-4 w-40 rounded shadow-lg transition-all duration-300">
+                    <Link href="/companys/about" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
                       About
                     </Link>
-                    <Link href="/blog" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/companys/blog" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
                       Blog
                     </Link>
-                    <Link href="/faqs" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/companys/faqs" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
                       FAQs
                     </Link>
-                    <Link href="/support" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
+                    <Link href="/companys/support" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
                       Support
                     </Link>
                   </div>
@@ -134,20 +136,7 @@ const Navbar = () => {
               <MdArrowDropDown className={`transition-transform duration-300 ${isDropdownOpen === 'features' ? 'rotate-180' : ''}`} />
             </button>
             {isDropdownOpen === 'features' && (
-              <div className="ml-4 space-y-1">
-                <Link href="/funding" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
-                  Funding
-                </Link>
-                <Link href="/staking" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
-                  Staking
-                </Link>
-                <Link href="/liquidity" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
-                  Liquidity
-                </Link>
-                <Link href="/margintrading" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
-                  Marging Trading
-                </Link>
-              </div>
+              <MenuLinks links={featuresLinks} closeMenu={closeMenu} />
             )}
 
             <Link href="/prices" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100 rounded transition-all duration-300">
@@ -159,20 +148,7 @@ const Navbar = () => {
               <MdArrowDropDown className={`transition-transform duration-300 ${isDropdownOpen === 'company' ? 'rotate-180' : ''}`} />
             </button>
             {isDropdownOpen === 'company' && (
-              <div className="ml-4 space-y-1">
-                <Link href="/about" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
-                  About
-                </Link>
-                <Link href="/blog" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
-                  Blog
-                </Link>
-                <Link href="/faqs" onClick={closeMenu} className="border-b text-xs block px-4 py-2 hover:bg-gray-100">
-                  FAQs
-                </Link>
-                <Link href="/support" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100">
-                  Support
-                </Link>
-              </div>
+              <MenuLinks links={companyLinks} closeMenu={closeMenu} />
             )}
 
             <Link href="/developers" onClick={closeMenu} className="text-xs block px-4 py-2 hover:bg-gray-100 rounded transition-all duration-300">
