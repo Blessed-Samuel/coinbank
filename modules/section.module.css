@@ -13,3 +13,11 @@
 .sectionH3Bg {
   background: url('../public/hero3bg.svg') no-repeat top center;
 }
+
+.sectionH4Bg {
+  background: url('../public/hero4bg.svg') no-repeat top center;
+}
+
+.sectionH5Bg {
+  background: url('../public/hero5bg.svg') no-repeat top center;
+}

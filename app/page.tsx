@@ -92,13 +92,13 @@ export default function Home() {
       </Section>
 
       {/* Fourth Section */}
-      <Section bgClass="sectionH2Bg" classname='mt-40' customStyles='bg-white'>
+      <Section bgClass="sectionH2Bg" classname='mt-0 pt-40' customStyles='bg-white'>
         <Container>
           <div className='flex gap-4 items-center flex-col'>
             <h6 className="text-mainColorPrimary font-light">FEATURES</h6>
             <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Get a bird’s eye view of your crypto investments</h1>
             <p className="text-mainColorNeutral font-light text-center">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
-            <Image src="/featuresImg.svg" alt="featuresImage" width={100} height={100} className="w-auto h-auto md:mt-36 mt-12" />
+            <Image src="/featuresImg.svg" alt="featuresImage" width={100} height={100} className="w-auto h-auto md:mt-24 mt-12" />
           </div>
         </Container>
       </Section>
@@ -116,9 +116,58 @@ export default function Home() {
       </Section>
 
       {/* Sixth Section */}
-      <Section bgClass="" classname="min-h-screen mt-36">
+      <Section bgClass="sectionH4Bg" classname="pb-28">
         <Container>
-          <Image src="/contentImg.svg" alt="contentImage" width={100} height={100} className="w-auto h-auto" />
+          <div className='flex pt-24 gap-4 items-center flex-col'>
+            <h6 className="text-mainColorPrimary font-light">FEATURES</h6>
+            <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-2xl text-center font-bold" style={{ lineHeight: '120%' }}>Supercharge your trades with advanced features</h1>
+
+            <div className="grid md:grid-cols-2 gap-12 mt-20 grid-cols-1 px-0 md:px-3">
+              <div className="bg-white rounded-3xl border-2 border-gray-200 shadow-gray-100 shadow-lg backdrop-blur-2xl">
+                <Image src="/coinBankChart.svg" alt="coinBankChart" width={100} height={100} className="w-auto h-auto mb-6" />
+                <div className="space-y-4 p-8">
+                  <h6 className="text-mainColorSecondary font-normal text-xl">Grow and earn everyday</h6>
+                  <p className="text-mainColorNeutral font-light">Blockchain technology comes in various forms, each with unique features and uses. From public to private chains, and from permissioned to permissionless networks, blockchain is reshaping industries.</p>
+                </div>
+              </div>
+              <div className="bg-white rounded-3xl border-2 border-gray-200 shadow-slate-100 shadow-lg backdrop-blur-xl">
+                <Image src="/coinBankCard.svg" alt="coinBankChart" width={100} height={100} className=" rounded-3xl w-auto h-auto mb-6" />
+                <div className="space-y-4 p-10">
+                  <h6 className="text-mainColorSecondary font-normal text-xl">Virtual cards powered by Mastercard</h6>
+                  <p className="text-mainColorNeutral font-light">Blockchain technology comes in various forms, each with unique features and uses. From public to private chains, and from permissioned to permissionless networks, blockchain is reshaping industries.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Trading Section */}
+      <Section bgClass="sectionH5Bg" classname="min-h-screen md:pb-28 pb-0 pt-32">
+        <Container>
+          <div className="grid grid-cols-1 gap-20 items-end">
+            <div className="space-y-16 flex md:flex-row flex-col items-end gap-12 md:gap-20">
+              <div className="space-y-4">
+                <h6 className="text-mainColorPrimary font-light text-md">FEATURES</h6>
+                <h1 className="text-mainColorSecondary text-4xl md:text-3xl font-bold" style={{ lineHeight: '120%' }}>Seamless Trading</h1>
+                <p className="text-mainColorNeutral font-light">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
+              </div>
+              <p className="text-mainColorNeutral font-light">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
+            </div>
+            <Image src="/tradingImg.svg" alt="tradingImg" width={100} height={100} className="w-auto h-auto" />
+          </div>
+        </Container>
+      </Section>
+
+      {/* Testimonial Section */}
+      <Section bgClass="" classname="min-h-screen">
+        <Container>
+          <div className='flex pt-24 gap-4 items-center flex-col'>
+            <h6 className="text-mainColorPrimary font-light">TESTIMONIALS</h6>
+            <h1 className="text-mainColorSecondary text-4xl md:text-5xl text-center font-bold" style={{ lineHeight: '120%' }}>Trusted by more than 100K+ people</h1>
+            <p className="text-mainColorNeutral font-light text-center max-w-2xl">Hear what they say about us and why you should choose Coinbank</p>
+            {/* <Image src="/coinImg.svg" alt="coinImage" width={100} height={100} className="w-auto h-auto mt-16 mb-24" /> */}
+          </div>
         </Container>
       </Section>
     </>
