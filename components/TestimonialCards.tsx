@@ -12,7 +12,7 @@ interface CardsProps {
 const TestimonialCards: React.FC<CardsProps> = ({ quote, image, name, profession }) => {
     return (
         <>
-            <div className='bg-white flex flex-col items-center p-16 shadow-[0_8px_12px_rgba(0,0,0,0.02)] space-y-6 rounded-2xl'>
+            <div className='bg-white flex flex-col items-center p-12 shadow-[0_8px_12px_rgba(0,0,0,0.02)] border-[1.5px] space-y-10 rounded-2xl'>
                 <div className='flex space-x-4'>
                     <FaStar className='text-mainColorPrimary' />
                     <FaStar className='text-mainColorPrimary' />
@@ -20,7 +20,7 @@ const TestimonialCards: React.FC<CardsProps> = ({ quote, image, name, profession
                     <FaStar className='text-mainColorPrimary' />
                     <FaStar className='text-mainColorPrimary' />
                 </div>
-                <h3 className='text-mainColorSecondary text-center'>{quote}</h3>
+                <h3 className='text-mainColorSecondary text-center text-lg'>{quote}</h3>
                 <div className='flex items-center space-x-4'>
                     <Image src={image} alt={image} width={100} height={100} className='w-[50px] h-[50px] rounded-[50%]' />
                     <div>
