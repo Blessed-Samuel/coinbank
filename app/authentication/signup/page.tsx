@@ -2,7 +2,7 @@ import React from 'react';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 
-const SignUp = () => {
+export default function SignUp() {
     return (
         <>
             <Section bgClass='' classname="min-h-screen">
@@ -11,7 +11,6 @@ const SignUp = () => {
                 </Container>
             </Section>
         </>
-    )
+    );
 }
 
-export default SignUp;
