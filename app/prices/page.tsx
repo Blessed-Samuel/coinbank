@@ -1,7 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
+import CallToAction from '@/components/CallToAction';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,15 +13,16 @@ export const metadata: Metadata = {
 const Price = () => {
     return (
         <>
-            <Section bgClass="sectionH2Bg" classname='mt-40 min-h-screen' customStyles='bg-white'>
+            <Section bgClass='' classname=" ">
                 <Container>
-                    <div className='flex gap-4 items-center flex-col'>
-                        <h6 className="text-mainColorPrimary font-light">PRICES</h6>
-                        <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Welcome to Prices Page</h1>
-                        <p className="text-mainColorNeutral font-light text-center">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
+                    <div className='text-gray-900 text-lg'>Prices Page</div>
+                </Container>
+            </Section>
 
-                        <Image src="/featuresImg.svg" alt="hero-2-bg" width={100} height={100} className="w-auto h-auto md:mt-36 mt-12" />
-                    </div>
+            {/* Call to Action Section */}
+            <Section classname="min-h-screen bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
+                <Container>
+                    <CallToAction />
                 </Container>
             </Section>
         </>
