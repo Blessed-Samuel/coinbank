@@ -22,6 +22,7 @@ const config: Config = {
         mainColorPrimary: '#5235E8',
         mainColorNeutral: '#717184',
         mainColorGreen: '#DAF727',
+        mainWhite: '#ffffff',
       },
 
      keyframes: {

@@ -101,7 +101,7 @@ const Navbar = () => {
             {/* Sign In & Get Started Button (Only visible on larger screens) */}
             <div className="hidden md:flex space-x-4">
               <Link href="/signin">
-                <Button onClick={closeMenu} noBackground className={`font-normal border rounded-lg text-xs py-[14px] px-[20px] text-black hover:bg-gray-100`} >Sign In</Button>
+                <Button onClick={closeMenu} noBackground className={`font-normal border rounded-lg text-xs py-[14px] px-[20px] text-mainColorSecondary hover:bg-gray-100`} >Sign In</Button>
               </Link>
 
               <Link href="/getstarted">

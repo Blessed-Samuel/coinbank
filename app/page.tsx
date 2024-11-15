@@ -5,6 +5,7 @@ import Container from '@/components/Container';
 import Hero from '@/components/Hero';
 import SponsorMarquee from "@/components/Sponsors"
 import TestimonialCards from "@/components/TestimonialCards";
+import CallToAction from "@/components/CallToAction";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://coinbank.com'),
@@ -204,14 +205,14 @@ export default function Home() {
       </Section>
 
       {/* Testimonial Section */}
-      <Section bgClass="sectionH6Bg" classname="min-h-screen md:pb-20 pb-0 pt-32">
+      <Section bgClass="sectionH6Bg" classname="min-h-screen md:pb-20 pb-0 pt-16">
         <Container>
           <div className='flex pt-24 gap-4 items-center flex-col'>
             <h6 className="text-mainColorPrimary font-light">TESTIMONIALS</h6>
             <h1 className="text-mainColorSecondary text-4xl md:text-5xl text-center font-bold" style={{ lineHeight: '120%' }}>Trusted by more than 100K+ people</h1>
             <p className="text-mainColorNeutral font-light text-center max-w-2xl">Hear what they say about us and why you should choose Coinbank</p>
 
-            <div className="grid md:grid-cols-3 gap-10 grid-cols-1 mt-20">
+            <div className="grid md:grid-cols-3 gap-6 grid-cols-1 mt-20">
               <TestimonialCards quote="“Cool crypto currency, fast withdrawals and deposits, way better, than any wallet.”"
                 image="/My-Pics-2.jpg"
                 name="Blessed Samuel"
@@ -221,13 +222,13 @@ export default function Home() {
               <TestimonialCards quote="“It’s worth it, very intuitive and easy to learn about cryptocurrencies.”"
                 image="/My-Pics-2.jpg"
                 name="Blessed Samuel"
-                profession="Software Developer"
+                profession="Founder"
               />
 
               <TestimonialCards quote="“Best customer service so far. Amazing in all areas best centralized exchange.”"
                 image="/My-Pics-2.jpg"
                 name="Blessed Samuel"
-                profession="Software Developer"
+                profession="Investors"
               />
             </div>
           </div>
@@ -235,7 +236,7 @@ export default function Home() {
       </Section>
 
       {/* Trading Banner Section */}
-      <Section classname="min-h-screen md:pb-28 pb-0 md:pt-10 pt-20">
+      <Section classname="bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
         <Container>
           <div className="">
             <Image
@@ -246,6 +247,13 @@ export default function Home() {
               className="w-auto h-auto"
             />
           </div>
+        </Container>
+      </Section>
+
+      {/* Call to Action Section */}
+      <Section classname="min-h-screen bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
+        <Container>
+          <CallToAction />
         </Container>
       </Section>
     </>
