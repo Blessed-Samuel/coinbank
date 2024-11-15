@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const About = () => {
     return (
         <>
-            <Section bgClass='' classname="min-h-screen">
+            <Section bgClass='' classname=" ">
                 <Container>
                     <div className='text-gray-900 text-lg'>About Page</div>
                 </Container>

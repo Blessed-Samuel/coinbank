@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const Blog = () => {
     return (
         <>
-            <Section bgClass='' classname="min-h-screen">
+            <Section bgClass='' classname=" ">
                 <Container>
                     <div className='text-gray-900 text-lg'>Blog Page</div>
                 </Container>
