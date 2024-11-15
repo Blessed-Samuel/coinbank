@@ -1,21 +1,20 @@
 import React from 'react';
-// import Image from 'next/image';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 import CallToAction from '@/components/CallToAction';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Developers | CoinBank',
-    description: 'Building crypto-currency platform for everyone.'
+    title: 'Blog | CoinBank',
+    description: 'The next-generation crypto-wallet & trading platform.'
 }
 
-const Developer = () => {
+const BlogArticle = () => {
     return (
         <>
-            <Section bgClass='' classname=" ">
+            <Section bgClass='' classname="min-h-screen">
                 <Container>
-                    <div className='text-gray-900 text-lg'>Developer Page</div>
+                    <div className='text-gray-900 text-lg'>Blog Article Page</div>
                 </Container>
             </Section>
 
@@ -29,4 +28,4 @@ const Developer = () => {
     )
 }
 
-export default Developer;
+export default BlogArticle;
