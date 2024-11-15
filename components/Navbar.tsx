@@ -100,11 +100,11 @@ const Navbar = () => {
 
             {/* Sign In & Get Started Button (Only visible on larger screens) */}
             <div className="hidden md:flex space-x-4">
-              <Link href="/signin">
+              <Link href="/authentication/signin">
                 <Button onClick={closeMenu} noBackground className={`font-normal border rounded-lg text-xs py-[14px] px-[20px] text-mainColorSecondary hover:bg-gray-100`} >Sign In</Button>
               </Link>
 
-              <Link href="/getstarted">
+              <Link href="/authentication/signup">
                 <Button onClick={closeMenu} noBackground className={`font-normal  border rounded-lg text-xs py-[14px] px-[20px] bg-none text-[#5235E8] hover:bg-gray-100`} >Get Started</Button>
               </Link>
             </div>
@@ -157,7 +157,7 @@ const Navbar = () => {
 
             {/* Sign In Button in Mobile */}
             <div>
-              <Link href="/signin">
+              <Link href="/authentication/signin">
                 <Button
                   className='bg-blue-500 py-4 mt-4 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
                 >
@@ -165,7 +165,7 @@ const Navbar = () => {
                 </Button>
               </Link>
 
-              <Link href="/getstarted">
+              <Link href="/authentication/signup">
                 <Button
                   className='bg-blue-500 py-4 mt-2 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
                 >
