@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { Sora } from 'next/font/google';
 import Navbar from '@/components/Navbar';
@@ -14,17 +14,18 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname();
 
-  // Define routes where the Navbar should not appear
-  const noNavbarRoutes = ['/authentication/signup', '/authentication/signin'];
+  // base routes where the Navbar should not appear
+  const noNavbarBaseRoutes = ['/authentication/signup', '/authentication/signin', '/authentication/forgotpassword'];
 
-  const shouldShowNavbar = !noNavbarRoutes.includes(pathname);
+  // Check if the current pathname starts with any of the defined no-navbar routes
+  const shouldShowNavbar = !noNavbarBaseRoutes.some(route => pathname.startsWith(route));
 
   return (
     <html lang="en">
       <body className={sora.className}>
         {/* Conditionally render Navbar */}
         {shouldShowNavbar && <Navbar />}
-        <main className='mt-24'>{children}</main>
+        <main className={shouldShowNavbar ? 'mt-24' : ''}>{children}</main>
       </body>
     </html>
   );
