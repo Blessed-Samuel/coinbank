@@ -100,17 +100,17 @@ export default function SignUp() {
               className='text-sm font-light w-full py-2 bg-white border-[1.5px] hover:bg-[#f7f7f7] text-nowrap text-mainColorSecondary flex items-center justify-center space-x-3'
             >
               <FaGoogle size={18} color="#4285F4" />
-              <span>Signup with Google</span>
+              <span>Sign in with Google</span>
             </Button>
             <Button
               noBackground
               className='text-sm font-light w-full py-2 bg-white border-[1.5px] hover:bg-[#f7f7f7] text-nowrap text-mainColorSecondary flex items-center justify-center space-x-3'
             >
               <FaFacebook size={18} color="#1877F2" />
-              <span>Signup with Facebook</span>
+              <span>Sign in with Facebook</span>
             </Button>
           </div>
-          <h5 className='mt-10 text-center text-mainColorNeutral font-light text-sm tracking-widest'>
+          <h5 className='mt-10 text-center text-mainColorNeutral font-light text-xs'>
             Don't have an account already?
             <Link href="/authentication/signup" className="text-mainColorPrimary ml-[4px] text-xs">
               Sign up now

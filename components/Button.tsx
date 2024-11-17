@@ -7,6 +7,7 @@ type ButtonProps = {
     className?: string;
     disabled?: boolean;
     noBackground?: boolean;
+    type?: 'button' | 'submit' | 'reset';
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -15,7 +16,8 @@ const Button: React.FC<ButtonProps> = ({
     variant = 'primary',
     className = '',
     disabled = false,
-    noBackground = false
+    noBackground = false,
+    type = 'button'
 }) => {
     // Define base styles and variant-based styles
     const baseStyle = `px-4 py-2 rounded font-normal transition-all duration focus:outline-none`;

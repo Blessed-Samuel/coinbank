@@ -118,7 +118,7 @@ export default function SignUp() {
                         </Button>
                     </div>
 
-                    <h5 className='mt-10 text-center text-mainColorNeutral font-light text-sm tracking-widest'>
+                    <h5 className='mt-10 text-center text-mainColorNeutral font-light text-xs'>
                         Have an account?
                         <Link href="/authentication/signin" className="text-mainColorPrimary ml-[4px] text-xs">
                             Sign in

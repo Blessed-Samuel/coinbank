@@ -15,7 +15,7 @@ export default function RootLayout({
   const pathname = usePathname();
 
   // base routes where the Navbar should not appear
-  const noNavbarBaseRoutes = ['/authentication/signup', '/authentication/signin', '/authentication/forgotpassword'];
+  const noNavbarBaseRoutes = ['/authentication/signup', '/authentication/signin', '/authentication/forgotpassword', '/authentication/verification'];
 
   // Check if the current pathname starts with any of the defined no-navbar routes
   const shouldShowNavbar = !noNavbarBaseRoutes.some(route => pathname.startsWith(route));
