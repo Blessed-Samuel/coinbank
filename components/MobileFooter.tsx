@@ -35,7 +35,7 @@ const MobileFooter: React.FC = () => {
                         width={30}
                         height={30}
                     />
-                    <FooterSection title="Company" items={mobileItems} />
+                    <FooterSection title="Usefull Links" items={mobileItems} />
                     <div className="">
                         {/* Icons */}
                         <div className='Socia-Icons text-2xl text-mainColorNeutral flex space-x-2'>
