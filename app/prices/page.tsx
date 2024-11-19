@@ -28,7 +28,7 @@ const Price = () => {
             </Section>
 
             {/* Footer Section */}
-            <Section classname="bg-[#F7F6FE] md:pb-28 pb-10 md:pt-10 pt-20">
+            <Section classname="bg-[#F7F6FE] md:pb-20 pb-10 md:pt-10 pt-20">
                 <Container>
                     <GeneralFooter />
                 </Container>
