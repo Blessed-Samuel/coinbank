@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import SponsorMarquee from "@/components/Sponsors"
 import TestimonialCards from "@/components/TestimonialCards";
 import CallToAction from "@/components/CallToAction";
+import GeneralFooter from "@/components/GeneralFooter";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://coinbank.com'),
@@ -251,9 +252,16 @@ export default function Home() {
       </Section>
 
       {/* Call to Action Section */}
-      <Section classname="min-h-screen bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
+      <Section classname="bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
         <Container>
           <CallToAction />
+        </Container>
+      </Section>
+
+      {/* Footer Section */}
+      <Section classname="bg-[#F7F6FE] md:pb-28 pb-10 md:pt-10 pt-20">
+        <Container>
+          <GeneralFooter />
         </Container>
       </Section>
     </>

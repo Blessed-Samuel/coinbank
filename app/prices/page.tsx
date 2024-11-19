@@ -3,6 +3,7 @@ import React from 'react';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 import CallToAction from '@/components/CallToAction';
+import GeneralFooter from '@/components/GeneralFooter';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -20,9 +21,16 @@ const Price = () => {
             </Section>
 
             {/* Call to Action Section */}
-            <Section classname="min-h-screen bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
+            <Section classname="bg-[#F7F6FE] md:pb-28 pb-0 md:pt-10 pt-20">
                 <Container>
                     <CallToAction />
+                </Container>
+            </Section>
+
+            {/* Footer Section */}
+            <Section classname="bg-[#F7F6FE] md:pb-28 pb-10 md:pt-10 pt-20">
+                <Container>
+                    <GeneralFooter />
                 </Container>
             </Section>
         </>
