@@ -34,7 +34,7 @@ export default function DesktopFooter() {
                 <div>
                     <div className='space-y-6'>
                         <Image
-                            src="./coinBankLogo.svg"
+                            src="../coinBankLogo.svg"
                             alt='coinBankLogo'
                             width={50}
                             height={50}
