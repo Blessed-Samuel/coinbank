@@ -102,7 +102,7 @@ export default function DesktopFooter() {
                             </button>
                         </div>
                     </div>
-                    
+
                     <div className='copy-right mt-[58px]'>
                         <h5 className='text-mainColorNeutral text-xs'>Copyright 2024 © Coinbank</h5>
                     </div>
