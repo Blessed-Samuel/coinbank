@@ -37,7 +37,8 @@ const About = () => {
                             alt="aboutHeroImage"
                             width={100}
                             height={100}
-                            className="w-auto h-auto md:mt-44 mt-10"
+                            className="w-auto h-auto md:mt-40 mt-10"
+                            loading='lazy'
                         />
                     </div>
                 </Container>
