@@ -27,7 +27,7 @@ const MobileFooter: React.FC = () => {
 
     return (
         <footer>
-            <div className="mb-20 rounded-lg shadow-[0_8px_12px_rgba(0,0,0,0.02)] lg:hidden bg-white  text-white py-10">
+            <div className="mb-10 rounded-lg shadow-[0_8px_12px_rgba(0,0,0,0.02)] lg:hidden bg-white  text-white py-10">
                 <div className="container mx-auto flex flex-col items-center text-center justify-center space-y-10">
                     <Image
                         src="../coinBankLogo.svg"
