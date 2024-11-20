@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Section from '@/components/Section';
 import Container from '@/components/Container';
 import Hero from '@/components/Hero';
-import SponsorMarquee from "@/components/Sponsors"
+// import SponsorMarquee from "@/components/Sponsors";
 import TestimonialCards from "@/components/TestimonialCards";
 import CallToAction from "@/components/CallToAction";
 import GeneralFooter from "@/components/GeneralFooter";
@@ -87,8 +87,8 @@ export default function Home() {
             </div>
 
             <div id="marqueeEl">
-              <SponsorMarquee direction="left" />
-              <SponsorMarquee direction="right" />
+              {/* <SponsorMarquee direction="left" />
+              <SponsorMarquee direction="right" /> */}
             </div>
           </div>
         </Container>

@@ -10,7 +10,7 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import TestimonialCards from '@/components/TestimonialCards';
-import SponsorMarquee from '@/components/Sponsors';
+// import SponsorMarquee from '@/components/Sponsors';
 // import { useRouter } from 'next/navigation';
 
 export const metadata: Metadata = {
@@ -177,8 +177,8 @@ const About = () => {
                         </div>
 
                         <div id="marqueeEl">
-                            <SponsorMarquee direction="left" />
-                            <SponsorMarquee direction="right" />
+                            {/* <SponsorMarquee direction="left" />
+                            <SponsorMarquee direction="right" /> */}
                         </div>
                     </div>
                 </Container>
