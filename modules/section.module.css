@@ -30,3 +30,8 @@
 .aboutsectionH1Bg {
   background: url('../public/aboutHeroBg.svg') no-repeat top center;
 }
+
+.aboutsectionH2Bg {
+  background: url('../public/Backedbg.svg') no-repeat top center;
+}
+
