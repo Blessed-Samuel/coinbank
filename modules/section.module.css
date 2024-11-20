@@ -25,3 +25,8 @@
 .sectionH6Bg {
   background: url('../public/hero6.svg') no-repeat top center;
 }
+
+/* about page bg section */
+.aboutsectionH1Bg {
+  background: url('../public/aboutHeroBg.svg') no-repeat top center;
+}

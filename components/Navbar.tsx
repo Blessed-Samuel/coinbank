@@ -159,7 +159,7 @@ const Navbar = () => {
             <div>
               <Link href="/authentication/signin">
                 <Button
-                  className='bg-blue-500 py-4 mt-4 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
+                  className='bg-blue-500 px-4 py-4 mt-4 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
                 >
                   Sign In
                 </Button>
@@ -167,7 +167,7 @@ const Navbar = () => {
 
               <Link href="/authentication/signup">
                 <Button
-                  className='bg-blue-500 py-4 mt-2 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
+                  className='bg-blue-500 px-4 py-4 mt-2 text-left font-normal text-xs w-full text-white border-none hover:bg-blue-600'
                 >
                   Get Started
                 </Button>

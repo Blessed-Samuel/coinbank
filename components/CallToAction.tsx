@@ -23,7 +23,7 @@ const CallToAction = () => {
                     <Button
                         onClick={navigateToSignUp}
                         noBackground
-                        className='py-2 text-nowrap bg-mainWhite text-mainColorPrimary'
+                        className='px-4 py-2 text-nowrap bg-mainWhite text-mainColorPrimary'
                     >
                         Get Started
                     </Button>

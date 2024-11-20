@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 
 type ButtonProps = {
@@ -20,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
     type = 'button'
 }) => {
     // Define base styles and variant-based styles
-    const baseStyle = `px-4 py-2 rounded font-normal transition-all duration focus:outline-none`;
+    const baseStyle = ` py-2 rounded font-normal transition-all duration focus:outline-none`;
 
     // Styles with and without background
     const variantStyles = noBackground
