@@ -44,7 +44,7 @@ export default function SignUp() {
                     <div className='mt-12 space-y-4'>
                         <h2 className='text-mainColorSecondary text-4xl'>Create an account</h2>
                         <h6 className='text-mainColorNeutral text-sm tracking-widest'>
-                            Let's begin your 30-days risk-free trial.
+                            Let&apos;s begin your 30-days risk-free trial.
                         </h6>
                     </div>
 
@@ -131,7 +131,7 @@ export default function SignUp() {
                 <div className='bg-mainColorSecondary flex flex-col justify-between items-center pt-12 m:px-10 px-8'>
                     <div className='space-y-5 text-white mb-12'>
                         <h1 className='text-3xl'><span>~</span>With Coinbank, multi-signature digital wallet, you can start saving.</h1>
-                        <h5 className='text-sm font-extralight'>If you're interested in getting involved in the booming cryptocurrency industry and want to own your own digital coins, then sign up with us today!</h5>
+                        <h5 className='text-sm font-extralight'>If you&apos;re interested in getting involved in the booming cryptocurrency industry and want to own your own digital coins, then sign up with us today!</h5>
                     </div>
                     <Image
                         src="/signUpImg.svg"

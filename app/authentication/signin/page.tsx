@@ -44,7 +44,7 @@ export default function SignUp() {
           <div className='mt-12 space-y-4'>
             <h2 className='text-mainColorSecondary text-4xl'>Sign in to Coinbank</h2>
             <h6 className='text-mainColorNeutral text-sm tracking-widest'>
-              We're glad you're back!
+              We&apos;re glad you&apos;re back!
             </h6>
           </div>
 
@@ -111,7 +111,7 @@ export default function SignUp() {
             </Button>
           </div>
           <h5 className='mt-10 text-center text-mainColorNeutral font-light text-xs'>
-            Don't have an account already?
+            Dont&apos; have an account already?
             <Link href="/authentication/signup" className="text-mainColorPrimary ml-[4px] text-xs">
               Sign up now
             </Link>
@@ -122,7 +122,7 @@ export default function SignUp() {
         <div className='bg-mainColorSecondary flex flex-col-reverse justify-between items-center'>
           <div className='space-y-5 text-white mb-12 md:px-10 px-8'>
             <h1 className='text-3xl'><span>~</span>Welcome to the world of crypto! Log in for your coinbank personal wallet.</h1>
-            <h5 className='text-sm font-extralight'>We're the first crypto wallet that's secure, simple, and easy to use. Use it on your phone or in web browser with no downloads or installation required.</h5>
+            <h5 className='text-sm font-extralight'>We&apos;re the first crypto wallet that&apos;s secure, simple, and easy to use. Use it on your phone or in web browser with no downloads or installation required.</h5>
           </div>
           <Image
             src="/signInImg.svg"
