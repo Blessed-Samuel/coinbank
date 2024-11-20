@@ -82,7 +82,7 @@ export default function Home() {
           <div className="space-y-12">
             <div className='flex gap-4 items-center flex-col'>
               <h6 className="text-mainColorPrimary font-light">PARTNERS</h6>
-              <h1 className="text-mainColorSecondary text-4xl md:text-5xl leading-[120%] text-center font-bold">We're backed by the best</h1>
+              <h1 className="text-mainColorSecondary text-4xl md:text-5xl leading-[120%] text-center font-bold">We&apos;re backed by the best</h1>
               <p className="text-mainColorNeutral font-light">Trusted by these blockchains leading industries </p>
             </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
         <Container>
           <div className='flex gap-4 items-center flex-col'>
             <h6 className="text-mainColorPrimary font-light">FEATURES</h6>
-            <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Get a bird’s eye view of your crypto investments</h1>
+            <h1 className="text-mainColorSecondary text-4xl md:text-5xl max-w-3xl text-center font-bold" style={{ lineHeight: '120%' }}>Get a bird&apos;s eye view of your crypto investments</h1>
             <p className="text-mainColorNeutral font-light text-center">Keep up on all the latest trends in the crypto industry and stay ahead of the market.</p>
             <Image src="/featuresImg.svg"
               alt="featuresImage"

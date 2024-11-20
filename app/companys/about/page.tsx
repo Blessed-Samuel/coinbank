@@ -87,7 +87,7 @@ const About = () => {
                             height={30}
                         />
                         <h1 className="text-mainColorSecondary text-center text-4xl md:text-5xl max-w-4xl font-normal" style={{ lineHeight: '120%' }}>
-                            Its low fees, high rates for staking, and futures markets are all a draw.
+                            It&apos;s low fees, high rates for staking, and futures markets are all a draw.
                         </h1>
                         <div className='flex gap-4 items-center'>
                             <Image
@@ -172,7 +172,7 @@ const About = () => {
                     <div className="space-y-12">
                         <div className='flex gap-4 items-center flex-col'>
                             <h6 className="text-mainColorPrimary font-light">PARTNERS</h6>
-                            <h1 className="text-mainColorSecondary text-4xl md:text-5xl leading-[120%] text-center font-bold">We're backed by the best</h1>
+                            <h1 className="text-mainColorSecondary text-4xl md:text-5xl leading-[120%] text-center font-bold">We&apos;re backed by the best</h1>
                             <p className="text-mainColorNeutral font-light">Trusted by these blockchains leading industries </p>
                         </div>
 

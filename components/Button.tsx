@@ -53,6 +53,7 @@ const Button: React.FC<ButtonProps> = ({
 
     return (
         <button
+            type={type}
             className={`${combinedClassName} transition-transform duration-300 focus:outline-none ${scale ? "scale-95" : ""}`}
             onClick={handleClick}
             disabled={disabled}
