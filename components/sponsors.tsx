@@ -6,7 +6,7 @@ type SponsorMarqueeProps = {
 };
 
 const SponsorMarquee: React.FC<SponsorMarqueeProps> = ({ direction = "left" }) => {
-    // Determine which animation to apply based on the directioni in props
+    // Determine which animation to apply based on the direction prop
     const animationClass = direction === "left" ? "animate-marquee" : "animate-marqueeReverse";
 
     return (
