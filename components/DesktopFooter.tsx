@@ -47,7 +47,7 @@ export default function DesktopFooter() {
                                     id="language"
                                     value={selectedLanguage}
                                     onChange={handleLanguageChange}
-                                    className="border border-gray-300 text-mainColorNeutral text-sm rounded-lg px-4 py-2 pr-14 focus:outline-none focus:border-blue-500 appearance-none"
+                                    className="border border-gray-300 cursor-pointer text-mainColorNeutral text-sm rounded-lg px-4 py-2 pr-14 focus:outline-none focus:border-blue-500 appearance-none"
                                 >
                                     <option value="" disabled>
                                         Select language
