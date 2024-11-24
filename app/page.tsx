@@ -76,7 +76,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Third Section */}
+      {/* Third Section Including Marquee */}
       <Section classname='mt-40' customStyles='bg-white'>
         <Container>
           <div className="space-y-12">
